@@ -23,6 +23,10 @@ function tester(number, character) {
     alert("Please use an actual character!")
   } else if (isNaN(number)) {
     alert("Please use an actual number!")
+  } else if (parseInt(number) < 1) {
+      alert("Please use a possitive number")
+  } else if (character === " ") {
+    alert("Please refrain from using spaces")
   }
 }
 button.addEventListener("click", makeTree)
