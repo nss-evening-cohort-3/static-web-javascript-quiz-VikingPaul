@@ -5,13 +5,15 @@
   <title>JAVASCRIPT QUIZ!</title>
 </head>
 <body>
-  <form>
+  <form onsubmit="return false">
     <p>Height of Tree:</p>
     <input type="text" id="height">
     <p>Type of Charater:</p>
     <input type="text" id="character">
+    <p>
+      <button type="submit" id="treeMaker">Grow your tree</button>
+    </p>
   </form>
-  <button type="submit" id="treeMaker">Grow your tree</button>
   <div id="treeGrowsHere"></div>
   <script src="quiz.js"></script>
 </body>

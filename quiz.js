@@ -14,36 +14,15 @@ function makeTree() {
     }
   tree += "</p>"
   }
-  console.log("tree", tree);
   placement.innerHTML = tree
   placement.style.textAlign = "center"
 }
 function tester(number, character) {
+  //tests for possible problems
   if (character === "") {
     alert("Please use an actual character!")
   } else if (isNaN(number)) {
     alert("Please use an actual number!")
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 button.addEventListener("click", makeTree)
