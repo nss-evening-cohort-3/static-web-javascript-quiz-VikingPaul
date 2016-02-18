@@ -7,12 +7,16 @@ function makeTree() {
   var tree = ""
   for (i=0; i < height; i++) {
   //adjusts height of tree
-  tree +="<p>"
+    for (j = 0; j < (height - i - 1) * decoration.length; j++) {
+      tree += " "
+    };
+
     for (j=0; j < i*2+1; j++) {
       //creates all characters on line
       tree += decoration
     }
-  tree += "</p>"
+  console.log(tree);
+  tree = ""
   }
   placement.innerHTML = tree
   placement.style.textAlign = "center"
